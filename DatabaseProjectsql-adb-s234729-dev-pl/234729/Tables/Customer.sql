@@ -4,7 +4,7 @@ CREATE TABLE [234729].[Customer] (
     [Title]        NVARCHAR (8)                                       NULL,
     [FirstName]    [dbo].[Name]                                       NOT NULL,
     [MiddleName]   [dbo].[Name]                                       NULL,
-    [LastName]     [dbo].[Name]                                       NOT NULL,
+    [LastName]     [N234729_Chojna].[Nazwisko]                        NOT NULL,
     [Suffix]       NVARCHAR (10)                                      NULL,
     [CompanyName]  NVARCHAR (128)                                     NULL,
     [SalesPerson]  NVARCHAR (256)                                     NULL,
@@ -23,8 +23,4 @@ WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE=[234729].[CustomerHistory], DATA_CON
 
 GO
 
-
-ALTER TABLE [234729].[Customer]
-    ADD CONSTRAINT [PK_Customer] PRIMARY KEY CLUSTERED ([CustomerID] ASC);
-GO
 

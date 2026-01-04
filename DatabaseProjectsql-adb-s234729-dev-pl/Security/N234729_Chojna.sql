@@ -1,0 +1,4 @@
+CREATE SCHEMA [N234729_Chojna]
+    AUTHORIZATION [dbo];
+GO
+

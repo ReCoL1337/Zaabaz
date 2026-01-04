@@ -1,0 +1,4 @@
+CREATE TYPE [N234729_Chojna].[Nazwisko]
+    FROM NVARCHAR (50) NOT NULL;
+GO
+
